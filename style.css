@@ -1,0 +1,22 @@
+// In css you can actually select multiple classes using the following
+// format: .circle.orange {...} would apply styling to all elements that
+// are of class="circle orange"
+
+// Similarly, you can combine tags or mix and match different selectors,
+// h1#heading (h1 tag, id="heading"), h2.subheading {...} (h2 tag,
+//  class="subheading")
+
+// descendant selector ul li {...} apply style to any li element contained
+// within a ul element
+
+// direct child p > #section-one {...} select the section-one class directly
+// under the p tag
+
+// pseudo-class example:  a:hover {...}
+
+// pseudo-elements example:  p::after {content: ':-)'} would put happy faces
+// at the end of all p tags
+
+// order of priority in css
+// tags -> classes/pseudo-elemetns/attributes -> ids -> (inline styles)
+// if they are even in priority, then the last read wins

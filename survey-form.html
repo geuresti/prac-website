@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <form action="asd" method="post">
+      <fieldset>
+        <legend> Programming Language Survey </legend>
+
+        <div>
+          <label>
+            First and Last Name:
+            <input type="text" name="full_name">
+          </label>
+        </div>
+
+        <div>
+          <label for="email"> Email: </label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+          <label for="status"> Status: </label>
+          <select id="status" name="status">
+            <option value="student">student</option>
+            <option value="instructor">instructor</option>
+            <option value="administrator">administrator</option>
+          </select>
+        </div>
+
+        <p> Choose your favorite programming language: </p>
+
+        <div>
+          <label>
+            Python
+            <input type="radio" name="python" value="python">
+          </label>
+        </div>
+        <div>
+          <label>
+            Javascript
+            <input type="radio" name="js" value="javascript">
+          </label>
+        </div>
+        <div>
+          <label>
+            C#
+            <input type="radio" name="c#" value="c#">
+          </label>
+        </div>
+
+        <div>
+          <label>
+            Comments:
+            <textarea name="comments" rows="4" cols="30">Anything else you'd like to add?</textarea>
+          </label>
+        </div>
+
+        <p></p>
+
+        <div>
+          <label for="date"> Date: </label>
+          <input type="date" id="date" name="date">
+        </div>
+        
+        <p></p>
+
+        <div>
+          <label for="terms"> Accept Terms and Conditions: </label>
+          <input type="checkbox" id="terms" name="terms">
+        </div>
+
+        <div>
+          <label for="newsletter">
+            Sign up for our newsletter?
+            <input type="checkbox" name="newsletter" checked>
+          </label>
+        </div>
+
+        <p></p>
+        <div>
+          <button type="submit">Submit Response</button>
+        </div>
+
+      </fieldset>
+    <form>
+  </body>
+</html>
