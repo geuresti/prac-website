@@ -20,3 +20,44 @@
 // order of priority in css
 // tags -> classes/pseudo-elemetns/attributes -> ids -> (inline styles)
 // if they are even in priority, then the last read wins
+
+// display: block
+//     takes up whole row, respects width/height, margin/border/padding push
+//     other boxes away
+// display: inline
+//     boxes are placed next to each other until the row is fileld, w/h don't
+//     apply, margin/border/padding are applied but don't push other boxes
+
+// width values does not include the space added by margin/border/padding
+// so setting "box-sizing" to "border-box" (default is "content-box")
+// will change this to be more intuitive
+
+// values for something like padding, can be px/em/rem or a %
+// can do padding: inherit/unset (get value from parent / ignore parent value)
+
+// border-width/style/color can all be broken down by side (top/r/l/b)
+
+// margin: auto will center an item within its parent
+
+// position: static / relative / absolute / fixed / sticky
+// can be used in conjunction with top/r/l/bot, except for sticky which
+// requires the position to be specified
+
+// a static element does not use positioning (t/r/l/b), it is placed based on
+// the flow of the page (z-index also does not apply)
+
+// RELATIVE: offset by positioning (Ex: "left: -15px;")
+// ABSOLUTE: other elements act as if this one isn't there, can use additional
+//    positioning as well as z-index
+//    positioned in relation to it's closest POSITIONED ANCESTOR (this is
+//    weird and confusing)
+// FIXED: also removed from page flow, positioned relative to the document
+//    itself. Won't move even if the user scrolls or the page changes size.
+//    Useful for nav bars, buttons, links, videos. Make sure it doesn't obsure
+//    other content tho.
+// STICKY: acts like a relatively positioned item until you try to scroll past
+//    it, then it acts like a fixed item. Must have a relative position set
+
+// display: FLEX
+//    justify-content (for aligning content horizontally)
+//    align-items (for aligning items vertically)
