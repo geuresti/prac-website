@@ -69,3 +69,28 @@
 
 // align-content (how lines are spaced apart from each other)
 //    flex-start, flex-end, center, space-between, space-around, strecth
+
+// grid-template = grid-template-rows + grid-template-columns
+
+// transition: <attribute> <#s>, ... ;
+// transition-delay: #s;
+// transitions require interaction (ex: .box:hover)
+
+// css animations can play without needing to be clicked / hovered
+// example:
+/*
+  @keyframes example {     <-- DEFINE ANIMATION
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;  <-- CALL ANIMATION BY NAME
+    animation-duration: 4s;  <-- SPECIFY DURATION
+  }
+*/
+// after the animation finishes, the square will revert back to red
+// NOTE: not every property is animatable 

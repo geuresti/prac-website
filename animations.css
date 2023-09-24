@@ -1,0 +1,23 @@
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  transition: background-color 2s, transform 2s;
+  transition-delay: 0.5s;
+}
+
+.box:hover {
+  transform: rotate(180deg);
+  background-color: red;
+}
+
+@keyframes my-anim {
+  from {font-size: 20px;}
+  to {font-size: 50px;}
+}
+
+.anim-test {
+  font-size: 20px;
+  animation-name: my-anim;
+  animation-duration: 2s;
+}
